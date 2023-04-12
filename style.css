@@ -1,0 +1,492 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    background-color: #faf2e4;
+    margin: 0 10%;
+    font-family: sans-serif;
+    }
+header {
+        align-items: center;
+        text-align: center;
+        font-family: serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: 1px solid darkolivegreen;
+        margin-top: 15px;
+    }
+h1 {
+        text-align: center;
+        font-family: serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: 1px solid darkolivegreen;
+        margin-top: 30px;
+    }
+
+   
+
+/* nav style */
+
+.main_nav {
+    color: darkolivegreen;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: .3em;
+    margin: 0;
+    justify-content: center;
+}
+.main_nav a {
+    color: darkolivegreen;
+    padding: 50px 40px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.main_nav a:hover {
+    color: darkolivegreen;
+    font-weight: bolder;
+}
+
+/* hero image */
+
+.hero_image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/noodles.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8))
+}
+
+.hero_header {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+.hero_text {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 54%;
+    margin: 20px;
+    text-shadow: .05em .05em .1em black;
+    font-size: large;
+    text-shadow: darkolivegreen;
+    text-shadow: 2px;
+    text-transform: capitalize;
+}
+
+.button {
+    background-color: darkolivegreen;
+    border: none;
+    color: beige;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: rgb(52, 66, 29);
+    text-decoration: underline;
+}
+
+ /*    index    */
+
+ #index_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'welcome  welcome  welcome'
+    'about    about    about'
+    'month    event    email';
+ }
+
+ #welcome {
+    grid-area: welcome;
+    object-fit: cover;
+    font-weight: bolder;
+}
+
+ #about {
+    grid-area: about;
+    object-fit: cover;
+ }
+
+ #month {
+    grid-area: month;
+    object-fit: cover;
+ }
+
+ #event {
+    grid-area: event;
+    object-fit: cover;
+ }
+
+ #email {
+    grid-area: email;
+    object-fit: cover;
+ }
+
+ #month, #event, #email {
+    margin: 20px;
+ }
+
+
+ /*    about    */
+
+
+ #about_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'welcome    welcome     welcome'
+    
+    'hlight1   hlight2     hlight3';
+}
+
+#hlight1 {
+    grid-area: hlight1;
+    object-fit: cover;
+}
+
+#hlight2 {
+    grid-area: hlight2;
+    object-fit: cover;
+}
+
+#hlight3 {
+    grid-area: hlight3;
+    object-fit: cover;
+}
+
+#hlight1, #hlight2, #hlight3 {
+    margin: 20px;
+}
+
+/*    menu    */
+
+
+#menu_container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    border: 3px solid darkolivegreen;
+    border-style: dotted;
+    border-width: auto;
+    justify-content: center;
+    grid-template-areas: 
+    'prices       prices      prices'
+    'product1     product2    product3'
+    'create_own   create_own  create_own';
+    }
+
+#product1, #product2, #product3 {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#product1 {
+    grid-area: product1;
+    object-fit: cover;
+}
+
+#product2 {
+    grid-area: product2;
+    object-fit: cover;
+}
+
+#product3 {
+    grid-area: product3;
+    object-fit: cover;
+}
+
+#create_own {
+    grid-area: create_own;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#prices {
+    grid-area: prices;
+    text-align: center;
+}
+
+em {
+    text-align: center;
+}
+
+td {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: extra-expanded;
+    
+}
+
+table {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    padding-right: 150px;
+    padding-left: 50px;
+}
+
+
+
+#sides {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+    border: 3px solid darkolivegreen;
+    border-style: dotted;
+    border-width: auto;
+    justify-items: center;
+    grid-template-areas: 
+    'sides'
+    'breadstick'
+    'salad'
+    'salad2'
+    'toast';
+  justify-items: center;
+}
+
+.sides {
+    text-align: center;
+    
+}
+
+.breadstick {
+    grid-area: breadstick;
+}
+
+.salad {
+    grid-area: salad;
+}
+
+.salad2 {
+    grid-area: salad2;
+}
+
+.toast {
+    grid-area: toast;
+}
+
+.price {
+    font-weight: bold;
+    background: #6b8342;
+    padding: 6px;
+    width: 45%;
+    text-align-last: center;
+    margin-top: auto;
+    margin-inline: auto;
+    margin-right: 95%;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+
+/*    contact    */
+
+
+#contact_container {
+    border: darkolivegreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    'Location  Hours  Contact';
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+/*  MISC  */
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    justify-content: center;
+}
+
+img {
+    max-width: 215px;
+    justify-items: center;
+    margin-left: .5em;
+}
+
+caption {
+    font-weight: bolder;
+    font-size: x-large;
+    align-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    padding-left: .5em;
+}
+
+ul {
+    justify-items: center;
+}
+
+h2 em {
+    font-weight: lighter;
+    font-size: medium;
+}
+
+table {
+    margin-left: 20px;
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: darkolivegreen;
+    border-style: groove;
+    border-width: 50px;
+    
+}
+
+/* media qeury */
+
+ /* when screen is 500 and smaller [phone] */
+
+ @media screen and (max-width: 700px) {
+    body {
+       font-weight: bold;
+       font-size: medium;
+    }
+    h2 {
+        font-weight: lighter;
+        align-items: center;
+        justify-items: center;
+        margin: 2px 2px;
+    }
+    
+    #menu_container {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 15px;
+        border: 3px solid darkolivegreen;
+        border-style: dotted;
+        border-width: inherit;
+        justify-content: center;
+        grid-template-areas: 
+        'prices   '
+        'product1 '  
+        'product2 '
+        'product3 '
+        'create_own';
+        justify-items: center;
+        margin: 0 2px;
+        max-width: 1200px;
+    }
+
+    #sides {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 15px;
+        border: 3px solid darkolivegreen;
+        border-style: dotted;
+        border-width: auto;
+        justify-items: center;
+        justify-content: center;
+        grid-template-areas: 
+        'sides'
+        'breadstick'
+        'salad'
+        'salad2'
+        'toast';
+      justify-items: center;
+        margin: 0 2px;
+        max-width: 1200px;
+    }
+
+    #index_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        'welcome'
+        'about  '
+        'month  '
+        'event  '
+        'email  '
+        ;
+        justify-items: center;
+    
+     }
+     
+     }
+
+/* when screen is 800 and smaller [tablet]*/
+
+@media screen and (max-width: 800px) {
+
+    #index_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        'welcome  welcome '
+        'about    about   '
+        'month    event   '
+         'email  email' ;
+     }
+    }    
+  
+
